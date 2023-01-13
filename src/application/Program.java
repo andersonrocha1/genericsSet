@@ -2,6 +2,7 @@ package application;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 import entities.Product;
 
@@ -47,6 +48,7 @@ public class Program {
 		System.out.println(e)
 		
 */
+		/*
 		//Terceiro Exemplo
 		Set<Product> set = new HashSet<>();
 		set.add(new Product("TV", 900.0));
@@ -55,6 +57,19 @@ public class Program {
 		
 		Product prod = new Product("Notebook", 1200.0);
 		System.out.println(set.contains(prod));
+		*/
+		
+		//Quarto exemplo(TreeSet<>())
+		Set<Product> set = new TreeSet<>();
+		set.add(new Product("TV", 900.0));
+		set.add(new Product("Notebook", 1200.0));
+		set.add(new Product("Tablet", 400.0));
+		//Para Funcionar quando ultilizamos TreeSet, devemos implementar o Comparable
+		for (Product p : set) {
+			
+			System.out.println(p);
+		
+		}
 
 	}
 
